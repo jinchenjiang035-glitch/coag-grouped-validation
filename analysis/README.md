@@ -1,6 +1,6 @@
 # Plan 1 analysis pipeline
 
-**Paper framing:** `open_benchmark_audit` — see `outputs/analysis_summary.json`.
+**Paper framing:** grouped-validation case study — see `outputs/analysis_summary.json`.
 
 ```powershell
 $env:MPLBACKEND='Agg'

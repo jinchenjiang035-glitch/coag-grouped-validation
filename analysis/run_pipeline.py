@@ -1236,7 +1236,7 @@ def main() -> None:
     audit.to_csv(TABLES_DIR / "table4_benchmark_audit_summary.csv", index=False)
 
     combined = {
-        "paper_framing": "open_benchmark_audit",
+        "paper_framing": "grouped_validation_case_study",
         "task1": s1,
         "task2": s2,
         "task3": s3,

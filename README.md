@@ -17,11 +17,12 @@ Place the unpacked NAIADES bundle and `9X9.XLS` in a sibling folder named `feasi
 
 ## Reproduce frozen metrics
 
+Use **Python 3.12.7**. Package versions match Methods §3.9:
+
 ```text
+python -m pip install -r requirements.txt
 python analysis/run_pipeline.py
 ```
-
-Python 3.12, with NumPy, pandas, scikit-learn, LightGBM, SHAP, SciPy, matplotlib, xlrd, and openpyxl.
 
 ## What is in this repository
 

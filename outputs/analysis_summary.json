@@ -1,5 +1,5 @@
 {
-  "paper_framing": "open_benchmark_audit",
+  "paper_framing": "grouped_validation_case_study",
   "task1": {
     "n_rows": 1093,
     "n_source_water_groups_primary": 101,
