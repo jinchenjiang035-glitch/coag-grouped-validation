@@ -1,0 +1,7 @@
+benchmark,finding,metric,value
+Edwards jar,Grouped-structure optimism (protocol mismatch),RF R² random 5-fold vs leave-one-source-water (6 col),0.900 vs 0.269
+Edwards jar,LOGO generalization decomposition,"pooled R² / group-mean R² / within-group R² median (n≥12, SD>1 NTU)",0.269 / 0.361 / 0.252
+Edwards jar,Coagulant split sensitivity,RF R² water+coagulant groups (SI),0.016
+NAIADES CoagOpt,Inverse label degeneracy,near-zero min_dose / requires_coagulant,"45/81, stump turb_in F1=1.0"
+NAIADES Stimela high turb,Closed-form forward,max std(turb_flocc/turb_in) within coag_dos,0.0000
+NAIADES replica,Cross-scenario transfer,normal→extreme / accidental R²,0.038 / -0.286

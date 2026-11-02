@@ -1,0 +1,11 @@
+item,value
+CV folds,5
+Random seed,42
+Task 1 primary,RandomForest n=300 (LOGO); SHAP on RF
+Task 1 ablation (LOGO),RandomForest n=300; all_9 row reuses primary LOGO preds
+LightGBM (Task 1),"n_estimators=400, lr=0.05, num_leaves=31"
+Task 2 primary,Stimela high-turb forward RF; CoagOpt = structural lookup (SI)
+Edwards primary grouped CV,leave_one_source_water_6col
+Edwards LOGO cluster bootstrap,"B=10000, CI=0.95, no retrain"
+Replica grouped model,RandomForest n_estimators=200
+Min-dose threshold (NTU),1.0

@@ -1,0 +1,31 @@
+{
+  "n_rows": 1620,
+  "n_unique_coag_dos": 6,
+  "closed_form": "turb_flocc = turb_in * k(coag_dos); k has 6 discrete levels",
+  "max_std_ratio_within_dose": 2.2750455085067494e-05,
+  "correlations_with_turb_flocc": {
+    "turb_in": 0.9955672333696258,
+    "ph": -0.019749258705226293,
+    "conduct": 0.0057487908698294465,
+    "coag_dos": -0.06377031489551853,
+    "cl_dosage": 0.005977804595340228
+  },
+  "ml_audit_si_only": {
+    "rf_5feat": {
+      "rmse": 0.10261633268878144,
+      "mae": 0.05664954551146184,
+      "r2": 0.9993469216140389
+    },
+    "rf_2feat": {
+      "rmse": 0.06993000171492542,
+      "mae": 0.03686928212705948,
+      "r2": 0.9996967090796113
+    },
+    "plsr_2feat_linear": {
+      "rmse": 0.27853775781524304,
+      "mae": 0.20976724718214085,
+      "r2": 0.9951882785093863
+    },
+    "note": "High R\u00b2 reflects closed-form simulation, not learnable multivariate process."
+  }
+}

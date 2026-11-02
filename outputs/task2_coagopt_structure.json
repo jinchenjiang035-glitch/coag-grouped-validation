@@ -1,0 +1,13 @@
+{
+  "interpretation": "CoagOpt min-dose is a discrete turb_in threshold lookup; pH/conduct inert on grid.",
+  "ph_cond_effect_on_turb_floc": {
+    "cells_n": 518,
+    "max_turb_floc_range_within_cell": 0.0030000000000001137,
+    "frac_cells_range_above_1e-3": 0.04247104247104247
+  },
+  "lookup_baseline": {
+    "n_requires_coagulant": 36,
+    "decision_stump_turb_in_only_accuracy": 1.0,
+    "decision_stump_turb_in_only_macro_f1": 1.0
+  }
+}

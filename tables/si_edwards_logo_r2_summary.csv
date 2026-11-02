@@ -1,0 +1,2 @@
+n_groups,mae_median_ntu,mae_p25_ntu,mae_p75_ntu,n_groups_mae_gt_5_ntu,n_single_jar_groups,r2_pooled_sample_weighted,r2_group_means_one_point_per_source_water,r2_within_group_median,r2_within_group_median_n_ge_12_sd_gt_1ntu,n_groups_with_defined_within_r2,n_groups_subset_n12_sd1
+101,1.0400748544973566,0.3248856558719063,1.9305309523809504,8,34,0.26850927450692497,0.36057433376313974,0.07769430017126211,0.2517145520603724,67,27

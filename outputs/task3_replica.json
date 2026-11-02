@@ -1,0 +1,49 @@
+{
+  "n_rows": 22964,
+  "n_groups": 87,
+  "dosage_grid_n_unique_global": 6,
+  "random_5fold_cv_si_only": {
+    "rmse": 0.03792716498901302,
+    "mae": 0.003143006444870236,
+    "r2": 0.9911852510284993
+  },
+  "logo_n_sheets": 87,
+  "logo_r2_defined_sheets": 5,
+  "logo_r2_undefined_sheets": 82,
+  "logo_mae_median": 0.0007872928176795578,
+  "logo_mae_p90": 0.31691304347826105,
+  "logo_skill_median_excl_zero_baseline": 0.9980346820809248,
+  "logo_sheets_constant_dose": 82,
+  "logo_sheets_multilevel_dose": 5,
+  "normal_intra_random_cv_si": {
+    "rmse": 0.028714011755230105,
+    "mae": 0.002625657284256108,
+    "r2": 0.995004718591522
+  },
+  "scenario_transfer_primary": [
+    {
+      "protocol": "train_normal",
+      "test_scenario": "extremeEvents",
+      "n_train": 6466,
+      "n_test": 7139,
+      "rmse": 0.4097444253639372,
+      "mae": 0.37946631180837653,
+      "r2": 0.03833070842417163,
+      "rmse_train_median_baseline": 0.45500746935679204,
+      "mae_train_median_baseline": 0.4283513097072419,
+      "rmse_improvement_vs_median": 0.09947758452589717
+    },
+    {
+      "protocol": "train_normal",
+      "test_scenario": "accidentalEvents",
+      "n_train": 6466,
+      "n_test": 9359,
+      "rmse": 0.43952291620825484,
+      "mae": 0.3719780425259109,
+      "r2": -0.286453669152553,
+      "rmse_train_median_baseline": 0.45163567577277347,
+      "mae_train_median_baseline": 0.26081846351105886,
+      "rmse_improvement_vs_median": 0.02681975807999004
+    }
+  ]
+}

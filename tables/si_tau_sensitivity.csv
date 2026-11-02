@@ -1,0 +1,4 @@
+tau_ntu,n_feasible_inlets,n_near_zero_min_dose,n_unique_min_dose_levels
+0.5,36,18,3
+1.0,81,45,4
+2.0,135,99,5

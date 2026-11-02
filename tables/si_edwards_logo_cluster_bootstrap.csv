@@ -1,0 +1,4 @@
+metric,point,ci_low,ci_high,ci_level,n_resamples,resample_unit,resample_method,ci_method,random_seed
+pooled_r2,0.26850927450692497,0.07325470717165758,0.4787833023364629,0.95,10000,source_water_group,cluster_bootstrap_with_replacement,percentile,42
+group_mean_r2,0.36057433376313974,0.11612223786632266,0.5692599814934299,0.95,10000,source_water_group,cluster_bootstrap_with_replacement,percentile,42
+median_mae_per_source_ntu,1.0400748544973566,0.5298636984126968,1.2751682539682578,0.95,10000,source_water_group,cluster_bootstrap_with_replacement,percentile,42

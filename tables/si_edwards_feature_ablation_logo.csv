@@ -1,0 +1,6 @@
+feature_set,n_features,n_estimators,cv_protocol,predictions_source,rmse,mae,r2
+turb_in_linear,1,,leave_one_source_water_6col,logo_cv,7.896540292460585,4.243805674612673,-0.0211925261453052
+turb_in_rf,1,300,leave_one_source_water_6col,logo_cv,8.317926606501452,4.557494615035099,-0.13308915870431282
+turb_in_plus_dose_rf,2,300,leave_one_source_water_6col,logo_cv,7.622073553617338,3.4540104211620615,0.048562670112676454
+turb_dose_ph_rf,3,300,leave_one_source_water_6col,logo_cv,7.288727314505584,2.912118405487201,0.12996380244343841
+all_9_features_rf,9,300,leave_one_source_water_6col,same_as_table3_primary_logo,6.6832461050106335,2.682824697198536,0.26850927450692497

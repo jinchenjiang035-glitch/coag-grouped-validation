@@ -1,0 +1,109 @@
+{
+  "n_inlet_states": 333,
+  "n_feasible_min_dose": 81,
+  "n_near_zero_min_dose": 45,
+  "n_requires_coagulant": 36,
+  "n_unique_min_dose_levels": 4,
+  "feasible_fraction": 0.2432,
+  "threshold_ntu": 1.0,
+  "classification_repeated_cv_si": [
+    {
+      "tag": "tau1_all",
+      "n": 81,
+      "n_classes": 4,
+      "majority_baseline_accuracy": 0.5555555555555556,
+      "accuracy_mean": 0.8246913580246913,
+      "accuracy_std": 0.031620366604606646,
+      "macro_f1_mean": 0.6231497799417138,
+      "macro_f1_std": 0.06217622217163161,
+      "n_repeats": 10,
+      "n_splits": 5
+    },
+    {
+      "tag": "tau1_requires_coagulant",
+      "n": 36,
+      "n_classes": 3,
+      "majority_baseline_accuracy": 0.5,
+      "accuracy_mean": 0.9916666666666666,
+      "accuracy_std": 0.012729376930432895,
+      "macro_f1_mean": 0.9914149443561208,
+      "macro_f1_std": 0.013113889111161363,
+      "n_repeats": 10,
+      "n_splits": 5
+    },
+    {
+      "tag": "tau0p5_all",
+      "n": 36,
+      "n_classes": 3,
+      "majority_baseline_accuracy": 0.5,
+      "accuracy_mean": 0.9722222222222221,
+      "accuracy_std": 0.02151657414559677,
+      "macro_f1_mean": 0.9626393188854487,
+      "macro_f1_std": 0.02904787624987007,
+      "n_repeats": 10,
+      "n_splits": 5
+    },
+    {
+      "tag": "tau0p5_requires_coagulant",
+      "n": 18,
+      "n_classes": 2,
+      "majority_baseline_accuracy": 0.5,
+      "accuracy_mean": 1.0,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 1.0,
+      "macro_f1_std": 0.0,
+      "n_repeats": 10,
+      "n_splits": 5
+    }
+  ],
+  "regression_cv_metrics_si": {
+    "rmse": 0.05363898932236164,
+    "mae": 0.03195671744785912,
+    "r2": 0.9867778104349216
+  },
+  "coagopt_structure": {
+    "interpretation": "CoagOpt min-dose is a discrete turb_in threshold lookup; pH/conduct inert on grid.",
+    "ph_cond_effect_on_turb_floc": {
+      "cells_n": 518,
+      "max_turb_floc_range_within_cell": 0.0030000000000001137,
+      "frac_cells_range_above_1e-3": 0.04247104247104247
+    },
+    "lookup_baseline": {
+      "n_requires_coagulant": 36,
+      "decision_stump_turb_in_only_accuracy": 1.0,
+      "decision_stump_turb_in_only_macro_f1": 1.0
+    }
+  },
+  "stimela_structure": {
+    "n_rows": 1620,
+    "n_unique_coag_dos": 6,
+    "closed_form": "turb_flocc = turb_in * k(coag_dos); k has 6 discrete levels",
+    "max_std_ratio_within_dose": 2.2750455085067494e-05,
+    "correlations_with_turb_flocc": {
+      "turb_in": 0.9955672333696258,
+      "ph": -0.019749258705226293,
+      "conduct": 0.0057487908698294465,
+      "coag_dos": -0.06377031489551853,
+      "cl_dosage": 0.005977804595340228
+    },
+    "ml_audit_si_only": {
+      "rf_5feat": {
+        "rmse": 0.10261633268878144,
+        "mae": 0.05664954551146184,
+        "r2": 0.9993469216140389
+      },
+      "rf_2feat": {
+        "rmse": 0.06993000171492542,
+        "mae": 0.03686928212705948,
+        "r2": 0.9996967090796113
+      },
+      "plsr_2feat_linear": {
+        "rmse": 0.27853775781524304,
+        "mae": 0.20976724718214085,
+        "r2": 0.9951882785093863
+      },
+      "note": "High R\u00b2 reflects closed-form simulation, not learnable multivariate process."
+    }
+  },
+  "task2_main_claim": "NAIADES coagulation tables are structural benchmarks (lookup / closed-form); do not report CoagOpt RF classifier or Stimela high R\u00b2 as ML contributions."
+}

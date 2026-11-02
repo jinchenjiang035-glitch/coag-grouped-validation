@@ -1,0 +1,14 @@
+citation_short,doi,year,study_type,in_cv_audit,split_stated,split_ratio,randomization_stated,grouping_unit,primary_metric,reports_baseline,multiple_samples_per_unit,full_text_available,evidence_location,notes
+Feng et al. JWPE AutoML SHAP coagulant dosing,10.1016/j.jwpe.2025.107925,2025,supervised,yes,explicit,8:2,yes,none,R2,yes,yes,yes,JWPE p.5 (=PDF p.3) §2.3,"randomly divided train/test; TPOT 10-fold CV on pipeline"
+Kim et al. JWPE DL coagulant extreme events,10.1016/j.jwpe.2024.105934,2024,supervised,yes,explicit,calendar-year holdout,no,time,R2,yes,yes,yes,JWPE Methods (=PDF p.3–4) §2.2–2.3,"2016 test / 2017–2020 train (typical); 2020 test / 2016–2019 train (extreme); K–S on train vs test; reports_baseline=yes: vs physico-chemical model (Table 1; no 'baseline' token in text)"
+Khedher et al. JWPE Flocculation Index dosing,10.1016/j.jwpe.2022.103394,2023,supervised,yes,explicit,calibration-validation waters,no,one_way_source,R2,yes,yes,yes,JWPE p.7–8 (=PDF p.7–8) §3.3.1,"RSM-based (response-surface regression) not ML; S1 calibrate then S2-S5 one-way transfer; vs WTC-Coag software and conventional jar test (Fig 9); vol. 51 (2023)"
+Water Supply RL-DSS NAIADES replica,10.2166/ws.2023.328,2024,rl,yes,explicit,n/a,n/a,time_period,other,unclear,yes,yes,WS p.92 (=PDF p.7) §2.2,replica validation H2 2022; not ratio hold-out ML
+Liu et al. Processes AI coagulation review,10.3390/pr12091824,2024,review,no,n/a,n/a,n/a,n/a,other,n/a,n/a,yes,Throughout,Not in dosing-model audit denominator
+Roberts et al. Ecography cross-validation blocks,10.1111/ecog.02881,2017,methodology,no,explicit,n/a,n/a,source_block,other,no,yes,yes,Methods,Grouped CV reference
+Meyer et al. EMS spatial CV importance,10.1016/j.envsoft.2017.12.001,2018,methodology,no,explicit,n/a,n/a,space,other,no,yes,yes,Main text,Spatial CV reference
+NAIADES dataset Zenodo,10.5281/zenodo.7870529,2023,dataset,no,explicit,n/a,n/a,event,other,n/a,yes,yes,Dataset documentation,CC BY 4.0
+Kalhormohammadi Sci Rep ANN coagulant drilling WW,10.1038/s41598-025-15155-w,2025,supervised,yes,explicit,75:15:10,no,none,R2,yes,yes,yes,Methods §Model development,percentage split stated; assignment method not stated; 5-fold CV
+Tochio et al. Water Supply coagulant dosage process,10.2166/ws.2023.219,2023,supervised,yes,explicit,60:20:20,no,none,MSE,yes,yes,yes,Local PDF Coagulant dosage prediction in the water treatment process; Table 5,no random/shuffle in full text
+Fouchal et al. WCSE SHAP coagulant DL,10.1007/s41101-025-00434-4,2025,supervised,yes,explicit,70:30,no,none,R2,yes,yes,yes,WCS&E p.109 (=PDF p.6) Methods,70/30 split; random only in model names (RF); KS/JS on subsets
+Sculley ML technical debt (eval culture),10.48550/arXiv.1412.1123,2015,methodology,no,explicit,n/a,n/a,none,other,no,yes,yes,Sec.2,ML evaluation culture (ref [19])
+Edwards 1997 jar test data,,1997,dataset,no,n/a,n/a,n/a,source_water,other,n/a,yes,yes,github paleolimbot edwards97,Jar structure reference
